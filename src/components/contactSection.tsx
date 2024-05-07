@@ -3,7 +3,7 @@ import { Instagram, Linkedin, Github, Send } from "lucide-react";
 
 function contactSection() {
   return (
-    <div className="border-zinc-700 border w-full -mt-10 rounded-lg">
+    <div className="bg-zinc-900/50 border border-zinc-800 w-full -mt-10 rounded-lg">
       <div className="p-4">
         <h4 className="text-zinc-200 font-semibold text-xl text-left mb-3">
           VAMOS CONSTRUIR ALGO JUNTOS?

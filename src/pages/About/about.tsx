@@ -3,6 +3,7 @@ import CenteredLayout from "@/components/centeredLayout";
 import Header from "@/components/header";
 import JobItem from "@/components/jobItem";
 import ContactSection from "@/components/contactSection";
+import TitleComponent from "@/components/titleComponent";
 
 function About() {
   return (
@@ -12,12 +13,12 @@ function About() {
         <div className="flex items-center justify-center flex-col p-6">
           <div className="w-full flex justify-between items-center md:gap-12 sm:gap-9 max-[600px]:flex max-[600px]:flex-col max-[600px]:items-center max-[600px]:justify-center">
             <img
-              className="w-72 h-72 rounded-lg"
+              className="w-72 h-72 rounded-lg max-[600px]:w-[80%]"
               src={Profile}
               alt="Kayke Barbosa Loiola"
             />
             <div className="w-2/3 h-72 md:shrink max-[600px]:h-auto max-[600px]:mt-5 max-[600px]:w-[90%]">
-              <p className="text-left font-medium text-zinc-300 tracking-wider md:text-[0.95rem] sm:text-[0.85rem]">
+              <p className="text-left font-semibold text-zinc-300/90 tracking-wider md:text-[0.95rem] sm:text-[0.85rem]">
                 Olá, sou Kayke Barbosa, um Desenvolvedor de Software dedicado e
                 entusiasta da tecnologia. Possuo especialização em JavaScript
                 (Node.js, React.js, React Native, entre outros) e PHP, com
@@ -39,9 +40,7 @@ function About() {
             </div>
           </div>
           <div className="h-[70vh] w-full mt-16 sm:mt-24">
-            <h2 className="text-left font-semibold text-zinc-300 text-3xl mb-6">
-              Carreira
-            </h2>
+            <TitleComponent title="Carreira" />
             <div className="h-[40vh]">
               <JobItem
                 linkTo="https://www.netwall.com.br/"

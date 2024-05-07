@@ -1,5 +1,6 @@
 import { useState, FormEvent, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import TitleComponent from "./titleComponent";
 
 type FeedbackMessageType = "" | "success" | "error";
 
@@ -33,11 +34,8 @@ export default function FormSection() {
 
   return (
     <div className="flex justify-center items-center flex-col max-[600px] p-5">
-      <div className="w-full mb-8">
-        <span className="text-primary text-3xl md:text-2xl font-semibold flex items-center text-zinc-200 max-[600px] text-[1.3rem] max-[600px] pl-3">
-          <span className="w-6 h-1 bg-blue-600 mr-3 md:mr-4"></span>
-          Iniciar um projeto
-        </span>
+      <div className="w-full">
+        <TitleComponent title=" Iniciar um projeto" />
       </div>
       <div className="w-full flex flex-col md:flex-row justify-center gap-8 md:p-8">
         <div className="md:w-1/2 md:text-center rounded-lg p-6 bg-gray-900 shadow-lg">
@@ -60,7 +58,7 @@ export default function FormSection() {
           </p>
         </div>
 
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 border border-zinc-50/10">
           <form
             ref={formRef}
             className="bg-gray-800/25 text-white p-6 md:p-8 rounded-lg shadow-lg"
