@@ -27,7 +27,7 @@ function ContactSection() {
           className="flex items-center justify-start mt-4 mb-3"
         >
           <Link
-            to="https://example.com"
+            to="mailto:kaykeloioladev@gmail.com"
             className="w-44 p-2 flex items-center justify-center bg-zinc-200 hover:bg-zinc-400 text-zinc-900 rounded-full gap-6 max-[600px]:w-52"
           >
             <span className="flex items-center gap-2">
