@@ -14,6 +14,13 @@ export default function FormSection() {
     e.preventDefault();
 
     if (!formRef.current) return;
+    const email = formRef.current.email.value;
+
+    if (!validateEmail(email)) {
+      console.error("E-mail inválido.");
+      setFeedbackMessage("error");
+      return;
+    }
 
     try {
       await emailjs.sendForm(
@@ -31,6 +38,11 @@ export default function FormSection() {
     }
 
     formRef.current.reset();
+  };
+
+  const validateEmail = (email: string) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
   };
 
   return (
