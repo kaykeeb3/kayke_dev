@@ -61,7 +61,7 @@ function About() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.5 }}
-          className="h-[75vh] w-full mt-16 sm:mt-24 max-[600px]:h-[65vh]"
+          className="h-[75vh] w-full mt-16 sm:mt-24"
         >
           <TitleComponent title="Carreira" />
           <motion.div

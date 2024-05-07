@@ -4,6 +4,10 @@ import Header from "@/components/header";
 import { ArrowDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import Presentation from "@/assets/presentation.svg";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaReact, FaNodeJs, FaPhp, FaAws } from "react-icons/fa";
+import { SiNestjs, SiNextdotjs, SiTypescript } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 function Home() {
   return (
@@ -37,7 +41,74 @@ function Home() {
                   className="font-normal text-zinc-400 text-base"
                 >
                   Desenvolvo aplicações fullstack para web e mobile
-                  <br /> abrangendo desde o layout até o código.
+                  <br /> abrangendo desde o layout até o código. <br />
+                  <br />
+                  Utilizando as seguintes tecnologias. <br />
+                  <div className="flex justify-start gap-3 mt-3 xl:gap-4 max-[600px]:gap-2 ">
+                    <motion.span
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="hover:text-zinc-400"
+                    >
+                      <IoLogoJavascript className="w-5 h-5 text-zinc-300" />
+                    </motion.span>
+                    <motion.span
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="hover:text-zinc-400"
+                    >
+                      <FaReact className="w-5 h-5 text-zinc-300" />
+                    </motion.span>
+                    <motion.span
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="hover:text-zinc-400"
+                    >
+                      <FaNodeJs className="w-5 h-5 text-zinc-300" />
+                    </motion.span>
+                    <motion.span
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="hover:text-zinc-400"
+                    >
+                      <SiNextdotjs className="w-5 h-5 text-zinc-300" />
+                    </motion.span>
+                    <motion.span
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="hover:text-zinc-400"
+                    >
+                      <SiNestjs className="w-5 h-5 text-zinc-300" />
+                    </motion.span>
+                    <motion.span
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="hover:text-zinc-400"
+                    >
+                      <SiTypescript className="w-5 h-5 text-zinc-300" />
+                    </motion.span>
+                    <motion.span
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="hover:text-zinc-400"
+                    >
+                      <FaPhp className="w-5 h-5 text-zinc-300" />
+                    </motion.span>
+                    <motion.span
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="hover:text-zinc-400"
+                    >
+                      <BiLogoPostgresql className="w-5 h-5 text-zinc-300" />
+                    </motion.span>
+                    <motion.span
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="hover:text-zinc-400"
+                    >
+                      <FaAws className="w-5 h-5 text-zinc-300" />
+                    </motion.span>
+                  </div>
                 </motion.h4>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -55,7 +126,13 @@ function Home() {
                     to="https://www.linkedin.com/in/kayke-barbosa-loiola"
                     className="border border-blue-700 p-3"
                   >
-                    <ArrowDown className="w-8 h-8 text-zinc-200 animate-bounce" />
+                    <motion.span
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                      className="w-8 h-8 text-zinc-200 animate-bounce"
+                    >
+                      <ArrowDown />
+                    </motion.span>
                   </Link>
                 </motion.div>
               </div>
