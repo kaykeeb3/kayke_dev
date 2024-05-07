@@ -13,7 +13,7 @@ function About() {
         <div className="flex items-center justify-center flex-col p-6">
           <div className="w-full flex justify-between items-center md:gap-12 sm:gap-9 max-[600px]:flex max-[600px]:flex-col max-[600px]:items-center max-[600px]:justify-center">
             <img
-              className="w-72 h-72 rounded-lg max-[600px]:w-[80%]"
+              className="w-72 h-72 rounded-lg"
               src={Profile}
               alt="Kayke Barbosa Loiola"
             />
@@ -39,7 +39,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="h-[70vh] w-full mt-16 sm:mt-24">
+          <div className="h-[70vh] xl:h-[65vh] w-full mt-16 sm:mt-24 max-[600px]:h-[65vh]">
             <TitleComponent title="Carreira" />
             <div className="h-[40vh]">
               <JobItem

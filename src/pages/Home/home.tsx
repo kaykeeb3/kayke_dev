@@ -24,10 +24,16 @@ function Home() {
                   <br /> abrangendo desde o layout até o código.
                 </h4>
                 <div className="flex items-center justify-start mt-8 gap-10">
-                  <button className="px-8 py-4 text-white font-semibold bg-blue-700 hover:bg-blue-800">
+                  <Link
+                    to="https://www.linkedin.com/in/kayke-barbosa-loiola"
+                    className="px-8 py-4 text-white font-semibold bg-blue-700 hover:bg-blue-800"
+                  >
                     Entre em contato
-                  </button>
-                  <Link to="/" className="border border-blue-700 p-3">
+                  </Link>
+                  <Link
+                    to="https://www.linkedin.com/in/kayke-barbosa-loiola"
+                    className="border border-blue-700 p-3"
+                  >
                     <ArrowDown className="w-8 h-8 text-zinc-200 animate-bounce" />
                   </Link>
                 </div>
