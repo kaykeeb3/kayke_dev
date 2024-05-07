@@ -24,25 +24,25 @@ function contactSection() {
 
         <div className="flex items-center justify-center gap-5 mt-3 max-[600px]:gap-12">
           <Link
-            to="/"
+            to="https://instagram.com/kaykee_bl"
             className="border border-zinc-700/80 rounded-md p-1 hover:opacity-70"
           >
             <Instagram className="w-5 h-5 text-zinc-300" />
           </Link>
           <Link
-            to="/"
+            to="https://www.linkedin.com/in/kayke-barbosa-loiola"
             className="border border-zinc-700/80 rounded-md p-1 hover:opacity-70"
           >
             <Linkedin className="w-5 h-5 text-zinc-300" />
           </Link>
           <Link
-            to="/"
+            to="https://github.com/Kayke-Ti"
             className="border border-zinc-700/80 rounded-md p-1 hover:opacity-70"
           >
             <Github className="w-5 h-5 text-zinc-300" />
           </Link>
           <Link
-            to="/"
+            to="kaykeloioladev@gmail.com"
             className="border border-zinc-700/80 rounded-md p-1 hover:opacity-70"
           >
             <Send className="w-5 h-5 text-zinc-300" />
