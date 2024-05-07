@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import CenteredLayout from "@/components/centeredLayout";
 import Header from "@/components/header";
 import { ArrowDown } from "lucide-react";
@@ -12,18 +13,38 @@ function Home() {
           <Header />
 
           <div className="flex items-center justify-center sm:p-5 max-[600px]:p-5 max-[600px]:mt-16">
-            <div className="h-[70vh] w-full flex items-center justify-center max-[600px]:p-3">
+            <motion.div
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="h-[70vh] w-full flex items-center justify-center max-[600px]:p-3"
+            >
               <div className="w-full">
-                <h2 className="font-bold text-5xl text-zinc-200 mb-10">
+                <motion.h2
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5, duration: 0.5 }}
+                  className="font-bold text-5xl text-zinc-200 mb-10"
+                >
                   Desenvolvo <br />
                   projetos inovadores
-                </h2>
+                </motion.h2>
 
-                <h4 className="font-normal text-zinc-400 text-base">
+                <motion.h4
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1, duration: 0.5 }}
+                  className="font-normal text-zinc-400 text-base"
+                >
                   Desenvolvo aplicações fullstack para web e mobile
                   <br /> abrangendo desde o layout até o código.
-                </h4>
-                <div className="flex items-center justify-start mt-8 gap-10">
+                </motion.h4>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.5, duration: 0.5 }}
+                  className="flex items-center justify-start mt-8 gap-10"
+                >
                   <Link
                     to="https://www.linkedin.com/in/kayke-barbosa-loiola"
                     className="px-8 py-4 text-white font-semibold bg-blue-700 hover:bg-blue-800"
@@ -36,17 +57,25 @@ function Home() {
                   >
                     <ArrowDown className="w-8 h-8 text-zinc-200 animate-bounce" />
                   </Link>
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="max-sm:hidden md:hidden lg:flex lg:w-[70%]">
-              <img
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              className="max-sm:hidden md:hidden lg:flex lg:w-[70%]"
+            >
+              <motion.img
+                initial={{ scale: 0.8 }}
+                animate={{ scale: 1 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
                 className="h-fit"
                 src={Presentation}
                 alt="Background Image"
               />
-            </div>
+            </motion.div>
           </div>
         </CenteredLayout>
       </div>
