@@ -7,19 +7,19 @@ import Presentation from "@/assets/presentation.svg";
 function Home() {
   return (
     <>
-      <div className="bg-gradient-to-tl from-zinc-950 to-blue-800/20">
+      <div className="min-h-screen min-w-full">
         <CenteredLayout>
           <Header />
 
           <div className="flex items-center justify-center sm:p-5 max-[600px]:p-5 max-[600px]:mt-16">
-            <div className="h-[70vh] w-full flex items-center justify-center">
+            <div className="h-[70vh] w-full flex items-center justify-center max-[600px]:p-3">
               <div className="w-full">
-                <h2 className="font-bold text-5xl text-zinc-200 mb-10 tracking-wide">
+                <h2 className="font-bold text-5xl text-zinc-200 mb-10">
                   Desenvolvo <br />
                   projetos inovadores
                 </h2>
 
-                <h4 className="font-normal text-zinc-400 text-base tracking-wider">
+                <h4 className="font-normal text-zinc-400 text-base">
                   Desenvolvo aplicações fullstack para web e mobile
                   <br /> abrangendo desde o layout até o código.
                 </h4>

@@ -4,7 +4,9 @@ import AppRoutes from "./routes";
 function App() {
   return (
     <>
-      <AppRoutes />
+      <div className="bg-gradient-to-tr from-zinc-950 to-blue-950">
+        <AppRoutes />
+      </div>
     </>
   );
 }

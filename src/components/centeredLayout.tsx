@@ -6,7 +6,7 @@ interface CenteredLayoutProps {
 
 function CenteredLayout({ children }: CenteredLayoutProps) {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center min-h-screen min-w-full">
       <main className="xl:w-[1120px] lg:w-[900px] md:w-[800px]">
         {children}
       </main>
