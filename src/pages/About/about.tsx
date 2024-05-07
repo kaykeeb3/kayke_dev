@@ -10,12 +10,21 @@ function About() {
   return (
     <CenteredLayout>
       <Header />
+
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="flex items-center justify-center flex-col p-6"
       >
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          className="w-full float-start"
+        >
+          <TitleComponent title="Sobre" />
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -61,13 +70,25 @@ function About() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.5 }}
+          className="h-[1px] w-full bg-zinc-200/10 mt-11 xl:flex md:hidden sm:hidden max-w-[600px]:flex"
+        />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.5, duration: 0.5 }}
           className="h-[75vh] w-full mt-16 sm:mt-24"
         >
-          <TitleComponent title="Carreira" />
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 0.5 }}
+            transition={{ delay: 2, duration: 0.5 }}
+          >
+            <TitleComponent title="Carreira" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 2.5, duration: 0.5 }}
             className="h-[40vh] grid gap-8"
           >
             <JobItem

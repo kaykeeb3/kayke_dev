@@ -131,7 +131,7 @@ function Home() {
                       whileTap={{ scale: 0.9 }}
                       className="w-8 h-8 text-zinc-200 animate-bounce"
                     >
-                      <ArrowDown />
+                      <ArrowDown className="animate-bounce" />
                     </motion.span>
                   </Link>
                 </motion.div>
