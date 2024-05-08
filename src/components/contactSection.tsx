@@ -8,7 +8,7 @@ function ContactSection() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-zinc-900/50 border border-zinc-800 w-full -mt-10 rounded-lg"
+      className="bg-zinc-800/25 border border-zinc-800 w-full -mt-10 rounded-lg"
     >
       <div className="p-4">
         <h4 className="text-zinc-200 font-semibold text-xl text-left mb-3">
