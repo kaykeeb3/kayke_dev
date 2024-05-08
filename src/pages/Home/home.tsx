@@ -118,7 +118,7 @@ function Home() {
                 >
                   <Link
                     to="https://www.linkedin.com/in/kayke-barbosa-loiola"
-                    className="px-8 py-4 text-white font-semibold bg-blue-700 hover:bg-blue-800"
+                    className="px-8 py-4 text-white font-semibold bg-blue-700 hover:bg-blue-800 max-[580px]:p-3"
                   >
                     Entre em contato
                   </Link>
