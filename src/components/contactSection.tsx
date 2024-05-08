@@ -57,7 +57,7 @@ function ContactSection() {
             <Linkedin className="w-5 h-5 text-zinc-300" />
           </Link>
           <Link
-            to="https://github.com/Kayke-Ti"
+            to="https://github.com/kaykeeb3"
             className="border border-zinc-700/80 rounded-md p-1 hover:opacity-70"
           >
             <Github className="w-5 h-5 text-zinc-300" />
