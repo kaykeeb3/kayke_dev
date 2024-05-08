@@ -1,5 +1,6 @@
 {
   "name": "dev",
+  "description": "Meu site personalizado mostra um pouco sobre mim.",
   "private": true,
   "version": "0.0.0",
   "type": "module",
