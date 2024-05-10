@@ -48,7 +48,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.5 }}
         >
-          <p className="text-left text-zinc-300 sm:text-sm max-[600px]:bg-rose-500 max-[600px]:text-[1.1rem] md:text-[0.95rem] md:text-lg">
+          <p className="text-left text-zinc-300 sm:text-sm max-[600px]:text-[1.1rem] md:text-[0.95rem] md:text-lg">
             {description}
           </p>
         </motion.div>
