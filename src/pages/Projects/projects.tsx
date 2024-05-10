@@ -3,6 +3,7 @@ import CenteredLayout from "@/components/centeredLayout";
 import FormSection from "@/components/formSection";
 import Header from "@/components/header";
 import TitleComponent from "@/components/titleComponent";
+import { motion } from "framer-motion";
 import { Code, Globe, HardDrive } from "lucide-react";
 
 function Projects() {
@@ -12,10 +13,16 @@ function Projects() {
 
       <div className="p-6">
         <TitleComponent title="O que fazemos" />
-        <div className="grid grid-cols-2 gap-10 max-md:flex max-md:flex-col">
-          <p className="font-medium text-zinc-200 text-left p-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-md:flex max-md:flex-col">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1, duration: 0.5 }}
+            className="font-medium text-zinc-200 text-left"
+          >
             A presença da tecnologia no cotidiano das pessoas é cada vez mais
-            notável. <br />
+            notável.
+            <br />
             <br />
             Nossos celulares estão presentes em praticamente todos os momentos
             do nosso dia, proporcionando-nos informação, entretenimento,
@@ -24,7 +31,7 @@ function Projects() {
             No ambiente empresarial, a situação não é diferente. A tecnologia
             possibilita que as empresas se tornem mais ágeis e aprimorem seus
             produtos e serviços.
-          </p>
+          </motion.p>
 
           <ServiceCard
             icon={HardDrive}
@@ -40,7 +47,7 @@ function Projects() {
 
           <ServiceCard
             icon={Globe}
-            title="Acessória em tecnologia"
+            title="Assessoria em tecnologia"
             description="Nós oferecemos um serviço especializado em consultoria em tecnologia. Prestamos assessoria abrangente para diversas áreas da tecnologia, auxiliando empresas a tomar decisões estratégicas e implementar soluções inovadoras."
           />
         </div>
