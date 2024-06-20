@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Instagram, Linkedin, Github, Send } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 
 function ContactSection() {
   return (
@@ -48,25 +49,32 @@ function ContactSection() {
             to="https://instagram.com/kaykee_bl"
             className="border border-zinc-700/80 rounded-md p-1 hover:opacity-70"
           >
-            <Instagram className="w-5 h-5 text-zinc-300" />
+            <Instagram className="w-4 h-4 text-zinc-300" />
           </Link>
           <Link
             to="https://www.linkedin.com/in/kayke-barbosa-loiola"
             className="border border-zinc-700/80 rounded-md p-1 hover:opacity-70"
           >
-            <Linkedin className="w-5 h-5 text-zinc-300" />
+            <Linkedin className="w-4 h-4 text-zinc-300" />
           </Link>
           <Link
             to="https://github.com/kaykeeb3"
             className="border border-zinc-700/80 rounded-md p-1 hover:opacity-70"
           >
-            <Github className="w-5 h-5 text-zinc-300" />
+            <Github className="w-4 h-4 text-zinc-300" />
           </Link>
           <Link
             to="mailto:kaykeloioladev@gmail.com"
             className="border border-zinc-700/80 rounded-md p-1 hover:opacity-70"
           >
-            <Send className="w-5 h-5 text-zinc-300" />
+            <Send className="w-4 h-4 text-zinc-300" />
+          </Link>
+
+          <Link
+            to="https://x.com/kaykee_bl"
+            className="border border-zinc-700/80 rounded-md p-1 hover:opacity-70"
+          >
+            <FaXTwitter className="w-4 h-4 text-zinc-300" />
           </Link>
         </motion.div>
       </div>
