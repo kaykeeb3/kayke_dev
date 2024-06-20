@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import CustomLink from "./link";
 import { ArrowLeft } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import Logo from "@/assets/logo.svg";
 
 function Header() {
   const location = useLocation();
@@ -14,7 +15,10 @@ function Header() {
       className="flex items-center justify-between py-12 md:pr-5 max-[600px]:p-5"
     >
       <div className="float-start flex justify-start p-2">
-        {location.pathname !== "/" && ( // Verifica se a localização é diferente da página inicial
+        <Link to="/" className="w-full mx-1 hover:underline">
+          <img src={Logo} alt="Logo da Página" className="w-36" />
+        </Link>
+        {location.pathname !== "/" && (
           <Link to="/">
             <ArrowLeft className="w-5 h-5 text-zinc-300 hover:text-zinc-400" />
           </Link>
