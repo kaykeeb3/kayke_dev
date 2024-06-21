@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import CustomLink from "./link";
+import CustomLink from "@/components/link";
 
 interface JobItemProps {
   jobTitle: string;

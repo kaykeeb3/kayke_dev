@@ -45,7 +45,7 @@ function About() {
             transition={{ delay: 0.5, duration: 0.5 }}
             className="w-2/3 h-72 md:shrink max-[600px]:h-auto max-[600px]:mt-5 max-[600px]:w-[90%]"
           >
-            <p className="text-left font-semibold text-zinc-300/90 tracking-wider md:text-[0.95rem] sm:text-[0.85rem]">
+            <p className="text-left font-medium text-zinc-200 tracking-wider md:text-[0.95rem] sm:text-[0.85rem]">
               Olá, sou Kayke Barbosa, um Desenvolvedor de Software dedicado e
               entusiasta da tecnologia. Possuo especialização em JavaScript
               (Node.js, React.js, React Native, entre outros) e PHP, com

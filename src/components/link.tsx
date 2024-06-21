@@ -9,9 +9,7 @@ interface CustomLinkProps {
 function CustomLink({ to, children }: CustomLinkProps) {
   return (
     <Link to={to}>
-      <h2 className="text-base text-zinc-300 font-medium hover:text-zinc-400">
-        {children}
-      </h2>
+      <h2 className="text-base text-zinc-300 font-medium">{children}</h2>
     </Link>
   );
 }
